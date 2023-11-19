@@ -1,11 +1,15 @@
 export default function Home() {
   return (
-    <div>
-      <h1>
-        Me manda uma mensagem de sua escolha com PIX pra iantorquato2@gmail.com
-      </h1>
+    <div className="container">
+      <div className="card">
+        <h1 className="title">
+          The better place of <br /> the world is...
+        </h1>
 
-      <h2>A Ana é muita cara bixo 🥺🥲</h2>
+        <div className="card-image" />
+      </div>
+
+      <audio autoPlay controls src="meu-lugar.m4a" type="audio/mpeg" />
     </div>
   );
 }

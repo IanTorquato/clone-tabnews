@@ -1,0 +1,122 @@
+/* Reset abrangente (incluindo Normalize.css) */
+
+/* Box sizing para consistência */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Redefinir margens, preenchimentos e bordas */
+body, h1, h2, h3, p, figure, blockquote, dl, dd, ul, ol, li, table, th, td, form, fieldset, legend, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Estilos padrão para o corpo */
+body {
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+/* Remover decoração de link e estabelecer cores padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover estilos padrão de lista e ajustes */
+ul, ol {
+  list-style: none;
+}
+
+/* Remover espaçamento de lista em navegadores mais antigos */
+nav ul, nav ol {
+  list-style: none;
+}
+
+/* Remover estilos padrão de tabela e ajustes */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Ajustes para formulários e botões */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* Normalizar espaçamento do tipo de botão de acordo com os sistemas operacionais */
+button, input {
+  overflow: visible;
+}
+
+/* Remover estilos padrão de botão em navegadores mais antigos */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Remover estilos padrão de input em navegadores mais recentes */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../public/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container > audio {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 300px;
+}
+
+.card {
+  background-color: #fff;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0 24px #0004;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.card > h1 {
+  text-align: center;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.card > .card-image {
+  background-image: url('../public/bolha.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 64vw;
+  box-shadow: 0px 0 8px #0001;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .card > .card-image {
+    height: 48vh;
+    width: 88vw;
+  }
+}
