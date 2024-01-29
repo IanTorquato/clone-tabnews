@@ -1,4 +1,4 @@
-import database from "../../../../infra/database";
+import database from "infra/database";
 
 export default async function status(req, res) {
   const result = await database.query("SELECT 1+1;");
